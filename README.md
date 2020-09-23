@@ -9,12 +9,17 @@
 ### How To Run the Project
 
 1.  Clone the source code ( You can find out source code as zip from email)
-2.  check java version by ```java --version```. It should be ```v1.8``` or greater.
-3.  check maven version by ```mvn --version```. it should be ```v3.6.3``` or greater.
-3.  build the project by ```mvn clean test``` 
-4.  Three test should get executed and get passed. 
-5.  Now you can import it in Intellij and analyse and evaluate.
-6.  Once we are done with evaluation, i will start working on packaging the application for my personal usage. 
+2.  Unzip the source file inside a any folder. 
+3.  go inside that folder.  Let's call it ```program_root```
+4.  check java version by ```java --version```. It should be ```v1.8``` or greater.
+5.  check maven version by ```mvn --version```. it should be ```v3.6.3``` or greater.
+6.  build the project by ```mvn clean test```  ( In Terminal, you should be inside  ```program_root``` and ```pom.xml``` should be present there)
+7.  Three test should get executed and get passed. 
+8.  Now you can import it in Intellij and analyse and evaluate. [Documenataion](https://jeetmpatel1.github.io/Qumulo_Test/) may help if you want to run program by trying different inputs. 
+    -  create your input file. place it inside ```program_root```.
+    -  Inside ```Solution``` class, change the filename inside ```testMainLogic``` method with your filename. 
+    -  Now, Run the ```Solution``` class by Right clicking on Solution class. /  open ```program_root``` inside terminal and run ```mvn test```
+9.  Once we are done with evaluation, i will start working on packaging the application for my personal usage. 
 
 ### Features
 -   **Adaptable Program** 
@@ -30,7 +35,7 @@
         -   If you want to change output filename, change ```public static final String FINAL_OUTPUT_FILE_NAME = OUTPUT_FILE_SPLITTER + "output";``` in ```SolutionConfig```.
 
 ### Restriction on Hackerrank to write Solution has impected on two problems
--   Showing a **Maintainable code** in One Single file is tough  from my perspective. Still i have tried to make all logical segreggations in different classes. Hope that helps.  If you want properly maintainable code, source code in my email is seggregated in different files with proper packages structure. We can discuss how to improve it more. 
+-   ~~Showing a Maintainable code in One Single file is tough  from my perspective. Still i have tried to make all logical segreggations in different classes. Hope that helps.  If you want properly maintainable code, source code in my email is seggregated in different files with proper packages structure. We can discuss how to improve it more.~~ This is now not applicable as i have provided source code in multiple files. 
 -   Solution to this problem can be thought in different way too. Writing metedata within the part file. It can help with Faster processing. But pros and cons can be discussed. 
 
 
